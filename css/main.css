@@ -1,0 +1,213 @@
+/* Global Setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+.btn {
+  width: fit-content;
+  height: max-content;
+
+  background-color: transparent;
+  padding: 0.5rem 2.25rem;
+
+  color: #ffffff;
+  border-radius: 2rem;
+  border-color: #ffffff;
+  border-style: solid;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.btn.btn-yellow-outline {
+  border-color: #efbd4e;
+}
+
+.main-gradient {
+  background: linear-gradient(90deg, #1d4944 1.08%, #90b67c 100%);
+}
+
+.font-anton {
+  font-family: "Anton", sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: 0.75rem;
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+
+  z-index: 1000;
+
+  width: 100vw;
+  height: 7rem;
+}
+
+nav,
+.branding,
+.nav-links,
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav,
+nav a {
+  color: #ffffff;
+}
+
+nav .logo {
+  height: 1.5rem;
+  width: auto;
+
+  cursor: pointer;
+}
+
+nav .branding {
+  margin-left: 4rem;
+}
+
+nav .branding h4 {
+  line-height: 110%;
+  margin-left: 0.75rem;
+}
+
+nav .nav-links {
+  margin-left: 10rem;
+}
+
+nav ul,
+nav > div {
+  height: 100%;
+}
+
+nav .nav-links li {
+  margin-right: 3rem;
+  font-weight: bold;
+}
+
+nav .nav-links li.active {
+  border-top: 4px solid #efbd4e;
+}
+
+nav .nav-links li.active a {
+  color: #efbd4e;
+  margin-bottom: 4px;
+}
+
+nav .user-menu {
+  flex-grow: 1;
+  justify-content: end;
+}
+
+nav .user-menu > .logo {
+  margin-right: 2rem;
+}
+
+nav .expand-menu {
+  height: 100%;
+
+  padding: 0rem 4rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #385e46;
+}
+
+/* Hero Styling */
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+
+  padding: 4rem;
+}
+
+.hero .left-column {
+  position: relative;
+  z-index: 10;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+.hero .left-column h3,
+.hero .left-column h1,
+.hero .left-column p {
+  margin-bottom: 2rem;
+}
+
+.right-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+
+  overflow: hidden;
+}
+
+.right-decoration img {
+  position: relative;
+  top: 25%;
+  right: 10%;
+
+  height: 110%;
+  width: auto;
+}
